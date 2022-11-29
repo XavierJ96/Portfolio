@@ -92,6 +92,11 @@ body{
   font-size: 1.3rem;
 }
 
+.resume:hover{
+  color:#151418;
+  background-color: white;
+}
+
   
 @keyframes fadeIn {
     0% {
