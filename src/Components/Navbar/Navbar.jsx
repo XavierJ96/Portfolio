@@ -38,9 +38,7 @@ function Navbar(){
                     offset={-70}>
                         <li className="nav_item"><a className="nav-links">Contact</a></li>
                     </Link>
-                    <Link>
-                        <li className="nav_item"><a href="https://drive.google.com/file/d/1oejwvwXg4FWxDsDLWHeMN25aUkfOQcDO/view?usp=share_link" download className="nav-links nav_resume">Resume</a></li>
-                    </Link>
+                        <li className="nav_item"><a href="https://drive.google.com/uc?export=download&id=1oejwvwXg4FWxDsDLWHeMN25aUkfOQcDO" download="Xavier's CV.pdf" className="nav-links nav_resume">Resume</a></li>
                 </ul>
             </div>
             </div>
