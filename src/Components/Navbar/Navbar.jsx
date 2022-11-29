@@ -21,7 +21,7 @@ function Navbar(){
                 <img src="images/xj-white.svg" alt="Image of a signature logo" className="logo" />
             </Link>
 
-                <a className="nav-links resume">Resume</a>
+                <a className="nav-links resume" href="https://drive.google.com/uc?export=download&id=1oejwvwXg4FWxDsDLWHeMN25aUkfOQcDO" download="Xavier's CV.pdf">Resume</a>
                 <Hamburger duration={0.8} toggled={isOpen} toggle={setOpen} size="30"/>
 
                 <div className="nav_container">
