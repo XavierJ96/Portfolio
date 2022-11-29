@@ -8,7 +8,7 @@ function Projects(props){
                 <h2 className="pr-header">{props.item.projectTitle}</h2>
                 <div className="project-card">
                     <div className="project-img">
-                        <img src="images/project_1.jpg" alt="" className="project1"/>
+                        <img src="images/project_1.jpg" alt="Image of project" className="project1"/>
                     </div>
                     <div className="project-text">
                         <h4 className="projectTitle">{props.item.title}</h4>

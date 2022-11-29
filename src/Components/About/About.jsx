@@ -24,27 +24,27 @@ function About(){
                         <p>HTML</p>
                         </div>
                     <div className="tech-item">
-                        <img src="images/css3.svg" alt="" />
+                        <img src="images/css3.svg" alt="CSS Icon" />
                         <p>CSS</p>
                         </div>
                     <div className="tech-item">
-                        <img src="images/javascript.svg" alt="" />
+                        <img src="images/javascript.svg" alt="JavaScript Icon" />
                         <p>Javascript</p>
                         </div>
                     <div className="tech-item">
-                        <img src="images/react.svg" alt="" />
+                        <img src="images/react.svg" alt=" ReactJS Icon" />
                         <p>ReactJS</p>
                         </div>
                     <div className="tech-item">
-                        <img src="images/sass.svg" alt="" />
+                        <img src="images/sass.svg" alt="Sass Icon" />
                         <p>Scss</p>
                         </div>
                     <div className="tech-item">
-                        <img src="images/git.svg" alt="" />
+                        <img src="images/git.svg" alt="Git Icon" />
                         <p>Git</p>
                     </div>
                     <div className="tech-item">
-                        <img src="images/responsive.svg" alt="" className="responsive"/>
+                        <img src="images/responsive.svg" alt="Responsive design Icon" className="responsive"/>
                         <p>Responsive</p>
                     </div>
                 </div>
