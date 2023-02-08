@@ -1,7 +1,6 @@
 import "./Projects.css"
 
 function Projects(props){
-
     return(
         <section className="project-section" id="projects">
             <div className="project-container container">
@@ -18,8 +17,11 @@ function Projects(props){
                             <span className="stackTags">{props.item.stackTags}</span>
                         </div>
                         <div className="projectLink-container">
-                            <a href="" className="projectLinks git-link" >Github</a>
-                            <a href="" className="projectLinks live-link" >Live →</a>
+                            <a href={props.item.gitLink} 
+                            className="projectLinks git-link" >Github</a>
+                            <a href={props.item.live} className="projectLinks live-link" >
+                                Live →
+                                </a>
                         </div>
                     </div>
                 </div>
