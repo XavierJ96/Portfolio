@@ -9,7 +9,7 @@ function Hero(){
                     <div className="text-wrapper">
                         <div className="text-container">
                             <h1 className="name-header">Hi, I'm Xavier Julies</h1>
-                            <h4 className="sub-header">Frontend Developer</h4>
+                            <h4 className="sub-header">Full Stack Developer</h4>
                             <p className="hero-text">I design and code beautifully simple things, and I love what I do.</p>
                         </div>
                             <div className="img-container">
@@ -18,10 +18,10 @@ function Hero(){
                         </div>
                         <Link
                         activeClass="active"
-                        to="about"
+                        to="projects"
                         spy={true}
                         smooth={true}
-                        offset={-80}
+                        offset={-70}
                         duration={600}
                         className="scroll-text">
                         <div className="scroll-icon">

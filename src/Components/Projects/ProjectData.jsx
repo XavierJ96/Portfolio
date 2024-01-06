@@ -21,11 +21,11 @@ export default [{
 },
 {
     id: 3,
-    title: "Project 3",
-    description: "Project Description",
+    title: "TaskForge",
+    description: "TaskForge is an excellent tool for enhancing daily planning and preparing for standup meetings on the Tilde board, boosting productivity.",
     stackTitle: "Tech Stack:",
-    stackTags: "HTML, CSS, JS",
-    gitLink: "",
+    stackTags: "JS, Tailwind, React, Firebase, Chrome-extension Vite, CRXJS",
+    gitLink: "https://github.com/XavierJ96/taskforge",
     live: "",
-    Image: "images/project_1.jpg"
+    Image: "images/taskspage.png"
 }]

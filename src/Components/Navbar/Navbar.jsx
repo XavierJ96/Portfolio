@@ -21,7 +21,7 @@ function Navbar(){
                 <img src="images/xj-white.svg" alt="Image of a signature logo" className="logo" />
             </Link>
 
-                <a className="nav-links resume" href="https://drive.google.com/uc?export=download&id=13MLdITk2esKNrZ2gucR87pxFD-Zx2uII" download="Xavier's Resume.pdf">Resume</a>
+                <a className="nav-links resume" href="https://drive.google.com/uc?export=download&id=1NGRIhs0kvdX2tmjmRh4R0MZkX35r-7p9" download="Xavier's CV.pdf">Resume</a>
                 <Hamburger duration={0.8} toggled={isOpen} toggle={setOpen} size="30"/>
 
                 <div className="nav_container">
@@ -38,7 +38,7 @@ function Navbar(){
                     offset={-70}>
                         <li className="nav_item"><a className="nav-links">Contact</a></li>
                     </Link>
-                        <li className="nav_item"><a href="https://drive.google.com/uc?export=download&id=13MLdITk2esKNrZ2gucR87pxFD-Zx2uII" download="Xavier's Resume.pdf" className="nav-links nav_resume">Resume</a></li>
+                        <li className="nav_item"><a href="https://drive.google.com/uc?export=download&id=1nm3fHHUEGtLQv7Ne52IZdbP9HQYLtPtH" download="Xavier's CV.pdf" className="nav-links nav_resume">Resume</a></li>
                 </ul>
             </div>
             </div>
