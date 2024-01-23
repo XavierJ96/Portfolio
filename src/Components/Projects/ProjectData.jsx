@@ -41,7 +41,7 @@ export default [
     stackTitle: "Tech Stack:",
     stackTags: "JS, Notion API, Pokemon API",
     gitLink: "https://github.com/XavierJ96/notion-pokedex",
-    live: "https://www.notion.so/Pok-dex-v2-0-4c879351f81c49f3a2cef923925d4f8b",
+    live: "https://sturdy-polyester-1cd.notion.site/Pok-dex-v2-0-4c879351f81c49f3a2cef923925d4f8b?pvs=25",
     Image: "images/pokedex.png",
   },
 ];
