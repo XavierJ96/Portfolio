@@ -1,72 +1,96 @@
-import { useState } from "react"
-import { Spin as Hamburger } from "hamburger-react"
-import "./Navbar.css"
+import { useState } from "react";
+import { Spin as Hamburger } from "hamburger-react";
+import "./Navbar.css";
 import { Link, animateScroll as scroll } from "react-scroll";
 
-function Navbar(){
+function Navbar() {
+  const [isOpen, setOpen] = useState(false);
 
-    const [isOpen, setOpen] = useState(false)
+  return (
+    <nav className="nav-section" id="navbar">
+      <div className="nav container">
+        <Link
+          activeClass="active"
+          to="hero"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={600}
+          className="nav-img"
+        >
+          <img
+            src="images/xj-white.svg"
+            alt="Image of a signature logo"
+            className="logo"
+          />
+        </Link>
 
-    return (
-        <nav className="nav-section" id="navbar">
-            <div className="nav container">
-            <Link
-                activeClass="active"
-                to="hero"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={600}
-                className="nav-img">
-                <img src="images/xj-white.svg" alt="Image of a signature logo" className="logo" />
+        <a
+          className="nav-links resume"
+          href="https://drive.google.com/uc?export=download&id=1NGRIhs0kvdX2tmjmRh4R0MZkX35r-7p9"
+          download="Xavier's CV.pdf"
+        >
+          Resume
+        </a>
+        <Hamburger duration={0.8} toggled={isOpen} toggle={setOpen} size="30" />
+
+        <div className="nav_container">
+          <ul className="nav_list">
+            <Link to="projects" offset={-70}>
+              <li className="nav_item">
+                <a className="nav-links">Projects</a>
+              </li>
             </Link>
-
-                <a className="nav-links resume" href="https://drive.google.com/uc?export=download&id=1NGRIhs0kvdX2tmjmRh4R0MZkX35r-7p9" download="Xavier's CV.pdf">Resume</a>
-                <Hamburger duration={0.8} toggled={isOpen} toggle={setOpen} size="30"/>
-
-                <div className="nav_container">
-                <ul className="nav_list">
-                    <Link to="projects"
-                    offset={-70}>
-                        <li className="nav_item"><a className="nav-links">Projects</a></li>
-                    </Link>
-                    <Link to="about"
-                    offset={-70}>
-                        <li className="nav_item"><a className="nav-links">About</a></li>
-                    </Link>
-                    <Link to="contact"
-                    offset={-70}>
-                        <li className="nav_item"><a className="nav-links">Contact</a></li>
-                    </Link>
-                        <li className="nav_item"><a href="https://drive.google.com/uc?export=download&id=1nm3fHHUEGtLQv7Ne52IZdbP9HQYLtPtH" download="Xavier's CV.pdf" className="nav-links nav_resume">Resume</a></li>
-                </ul>
-            </div>
-            </div>
-            { isOpen ? 
-            <div className="list-container fadeIn">
-                <ul className="nav-list">
-                    <Link
-                    to="projects"
-                    offset={-260}>
-                        <li className="nav-item"><a className="nav-links">Projects</a></li>
-                    </Link>
-                    <Link
-                    to="about"
-                    offset={-260}>
-                        <li className="nav-item"><a className="nav-links">About</a></li>
-                    </Link>
-                    <Link
-                    to="contact"
-                    offset={-230}>
-                        <li className="nav-item"><a className="nav-links">Contact</a></li>
-                    </Link>
-                    <Link>
-                        <li className="nav-item"></li>
-                    </Link>
-                </ul>
-            </div> : false}
-        </nav>
-    )
+            <Link to="about" offset={-70}>
+              <li className="nav_item">
+                <a className="nav-links">About</a>
+              </li>
+            </Link>
+            <Link to="contact" offset={-70}>
+              <li className="nav_item">
+                <a className="nav-links">Contact</a>
+              </li>
+            </Link>
+            <li className="nav_item">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1nm3fHHUEGtLQv7Ne52IZdbP9HQYLtPtH"
+                download="Xavier's CV.pdf"
+                className="nav-links nav_resume"
+              >
+                Resume
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      {isOpen ? (
+        <div className="list-container fadeIn">
+          <ul className="nav-list">
+            <Link to="projects" offset={-260}>
+              <li className="nav-item">
+                <a className="nav-links">Projects</a>
+              </li>
+            </Link>
+            <Link to="about" offset={-260}>
+              <li className="nav-item">
+                <a className="nav-links">About</a>
+              </li>
+            </Link>
+            <Link to="contact" offset={-230}>
+              <li className="nav-item">
+                <a className="nav-links">Contact</a>
+              </li>
+            </Link>
+            <Link>
+              <li className="nav-item"></li>
+            </Link>
+          </ul>
+        </div>
+      ) : (
+        false
+      )}
+    </nav>
+  );
 }
 
-export default Navbar
+export default Navbar;
